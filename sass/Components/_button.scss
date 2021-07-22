@@ -1,0 +1,24 @@
+.btn{
+    &:link,
+    &:visited{
+        padding:1rem 1.5rem;
+        border-radius: 100rem;
+        background-color: $color-secondary;
+        display: inline-block;
+        transition: all .3s ease;
+        font-size: 1.6rem;
+        color: $color-white;
+        letter-spacing: 1px;
+    }
+    &:hover,
+    &:active{
+        background-color: $color-primary;
+        box-shadow: 0 1rem 1rem rgba($color: $color-primary, $alpha:.2) ;
+    }
+    &--orange{
+        color: $color-white;
+    }
+    &--blue{
+        background-color: $color-primary !important;
+    }
+}

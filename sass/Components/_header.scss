@@ -1,0 +1,81 @@
+.header{
+    position: relative;
+    margin-top: 10rem;
+    background-color: $color-white;
+    &__img-bg{
+        &-1{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &-2{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .row{
+        padding-top: 13rem;
+        padding-bottom: 12rem;
+    }
+    &__content{
+        margin: 10rem 0;
+        letter-spacing: .1rem;
+        animation: movetoright 2s ease .5s;
+        animation-fill-mode: backwards;
+        h6{
+        text-transform: uppercase;
+        color: $color-secondary;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        font-weight: 450;
+        }
+        h2{
+            font-size: 5rem;
+            margin-bottom: 2.5rem;
+            .span-blue{
+                color: $color-primary;
+            }
+            .span-red{
+                color: $color-secondary;
+            }
+        }
+        .paragraph{
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            a{
+                color: $color-primary;
+            }
+        }
+        .analyze{
+            position: relative;
+            &__site{
+                padding: 2.4rem 2rem;
+                font-size: 1.7rem;
+                border-radius: 100rem;
+                border: none;
+                outline: none;
+                width: 75%;
+                background-color: $color-primary;
+                color: $color-white;
+                &::placeholder{
+                    color: $color-white;
+                    opacity: .8;
+                }
+            }
+            .btn--nohover{
+                position: absolute;
+                top:1rem;
+                right:27%;
+                background-color: $color-white;
+                color: $color-secondary;
+                padding: 1rem 2rem;
+            }
+
+        }
+    }
+    &__logo{
+        animation-fill-mode: backwards;
+        animation: movetoleft 1.5s ease;
+    }
+}

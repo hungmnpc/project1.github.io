@@ -1,0 +1,39 @@
+.input{
+    position: relative;
+
+    input{
+        background-color: rgba($color: #fff, $alpha: .5);
+        width: 50rem;
+        padding: 1.5rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+        border: 1px solid #fff;
+        &:focus{
+            outline: none;
+            border: 1px solid blue;
+        }
+        &:not(:placeholder-shown) + label,
+        &:focus + label{
+            top: 0rem;
+            color:#fff;
+            padding:  0 1rem;
+            display: inline-block;
+            background-color: rgba($color: blue, $alpha: .8);
+            opacity: 1;
+            border-radius: 1rem;
+        }
+
+    }
+    label{
+        position: absolute;
+        top: 50%;
+        left: 1.5rem;
+        transform: translateY(-50%);
+        opacity: .5;
+        user-select: none;
+        pointer-events: none;
+        transition: all .3s ;
+
+    }
+
+}
